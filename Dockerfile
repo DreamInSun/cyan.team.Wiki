@@ -6,7 +6,7 @@ From dreaminsun/lamp
 MAINTAINER "DreamInSun"
 
 #========== Extension ==========
-RUN docker-php-ext-install sqlite
+RUN docker-php-ext-install pdo
 
 #========== Environment ==========
 
