@@ -21,11 +21,13 @@ ADD dokuwiki  $APACHE_DOC
 #========== Expose Ports ==========
 #EXPOSE 8080 
 
+#========== VOLUME ==========
+VOLUME /data
+VOLUME /backup
 
 #========= Add Entry Point ==========
 ADD shell /shell
 RUN chmod a+x /shell/*
-
 
 #========= Start Service ==========
 ENTRYPOINT ["/shell/docker-entrypoint.sh"]

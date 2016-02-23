@@ -19,6 +19,7 @@ opelayersmap
 overlay
 popularity
 davcal
+geophp
 
 ## 安装模板
 Vector
