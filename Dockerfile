@@ -9,7 +9,7 @@ MAINTAINER "DreamInSun"
 RUN docker-php-ext-install pdo
 
 #========== Environment ==========
-
+ENV WIKI_DATA /wikidata
 
 #========== Configuration ==========
 
@@ -22,7 +22,7 @@ ADD dokuwiki  $APACHE_DOC
 #EXPOSE 8080 
 
 #========== VOLUME ==========
-VOLUME /data
+VOLUME /wikidata
 VOLUME /backup
 
 #========= Add Entry Point ==========

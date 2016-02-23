@@ -6,16 +6,6 @@ echo ========== Configuration ==========
 export DOKUWIKI_ROOT=$APACHE_DOC
 
 if [ ! -d "$DOKUWIKI_ROOT/data/pages"]; then 
-#  mkdir -p $DOKUWIKI_ROOT/data/pages
-#  mkdir -p $DOKUWIKI_ROOT/data/attic 
-#  mkdir -p $DOKUWIKI_ROOT/data/media 
-#  mkdir -p $DOKUWIKI_ROOT/data/media_attic 
-#  mkdir -p $DOKUWIKI_ROOT/data/media_meta 
-#  mkdir -p $DOKUWIKI_ROOT/data/meta 
-#  mkdir -p $DOKUWIKI_ROOT/data/cache
-#  mkdir -p $DOKUWIKI_ROOT/data/locks 
-#  mkdir -p $DOKUWIKI_ROOT/data/index 
-#  mkdir -p $DOKUWIKI_ROOT/data/tmp 
   cp -rf $DOKUWIKI_ROOT/data_init/* $DOKUWIKI_ROOT/data/
 fi
 
