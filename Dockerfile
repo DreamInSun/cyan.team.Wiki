@@ -5,10 +5,14 @@
 From dreaminsun/lamp
 MAINTAINER "DreamInSun"
 
+#========== Extension ==========
+RUN docker-php-ext-install sqlite
+
 #========== Environment ==========
 
 
 #========== Configuration ==========
+
 
 #========== Install Application ==========
 ADD dokuwiki  $APACHE_DOC
