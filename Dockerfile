@@ -10,6 +10,7 @@ RUN docker-php-ext-install pdo
 
 #========== Environment ==========
 ENV DOKUWIKI_ROOT $APACHE_DOC
+ENV BACKUP_DIR /backup
 
 #========== Configuration ==========
 
@@ -22,8 +23,8 @@ ADD dokuwiki  $APACHE_DOC
 #EXPOSE 8080 
 
 #========== VOLUME ==========
-VOLUME /var/www/html/data
-VOLUME /backup
+VOLUME $DOKUWIKI_ROOT/data
+VOLUME $BACKUP_DIR
 
 #========= Add Entry Point ==========
 ADD shell /shell
