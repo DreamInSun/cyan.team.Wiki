@@ -1,12 +1,9 @@
 #!/bin/sh
 
 echo ========== Configuration ==========
-#php config.php
-
-export DOKUWIKI_ROOT=$APACHE_DOC
 
 if [ ! -d "$DOKUWIKI_ROOT/data/pages"]; then 
-  cp -rf $DOKUWIKI_ROOT/data_init/* $WIKI_DATA
+  cp -rf $DOKUWIKI_ROOT/data_init/* $DOKUWIKI_ROOT/data
 fi
 
 chmod -R 777 $DOKUWIKI_ROOT/conf
