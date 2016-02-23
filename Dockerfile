@@ -23,8 +23,8 @@ ADD dokuwiki  $APACHE_DOC
 #EXPOSE 8080 
 
 #========== VOLUME ==========
-VOLUME /var/www/html/data
-VOLUME /backup
+VOLUME $DOKUWIKI_ROOTdata
+VOLUME $BACKUP_DIR
 
 #========= Add Entry Point ==========
 ADD shell /shell

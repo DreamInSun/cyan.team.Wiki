@@ -2,7 +2,7 @@
 
 echo ========== Configuration ==========
 
-if [ ! -d "$DOKUWIKI_ROOT/data/pages"]; then 
+if [ ! -d "$DOKUWIKI_ROOT/data/pages" ];then
   echo Initialize data
   cp -rf $DOKUWIKI_ROOT/data_init/* $DOKUWIKI_ROOT/data
 fi
