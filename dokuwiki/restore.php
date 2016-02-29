@@ -2,7 +2,7 @@
 
 echo "<br/>/*========== 开始备份配置 ===========*/<br/>";
 $project_path = normalizePath(dirname(__FILE__) . "/");
-$backup_path = normalizePath(getenv("BACKUP_DIR"));
+$backup_path = normalizePath(getenv("BACKUP_DIR") . "/");
 $plugin_path = normalizePath($project_path . "lib/plugins/");
 $tpl_path = normalizePath($project_path . "lib/tpl/");
 
