@@ -52,7 +52,7 @@ docker run -p 80:80 dreaminsun/dokuwiki
 
 ### 数据持久化
 docker run --restart always \
-  -v /wikidata:/data/dokuwiki/data \
+  -v /var/www/html/data:/data/dokuwiki/data \
   -v /backup:/data/dokuwiki/backup \
   -p 80:80 
   dreaminsun/dokuwiki
